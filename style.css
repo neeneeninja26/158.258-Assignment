@@ -17,12 +17,53 @@
     font-weight: 400;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .drop-button {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.cats-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.cats-dropdown a {
+    float: none;
+    color: black;
+    padding: 24px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .cats-dropdown {
+    display: block;
+}
+
 .navbar #title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: italic;
     color: #674740;
+}
+
+.navbar a.right-split {
+    float: right;
 }
 
 /* change link colour on hover */
@@ -43,7 +84,9 @@
 
 
 @media screen and (max-width: 748px) {
-    .navbar a:not(:first-child) {display: none;}
+    .navbar a:not(:first-child), .dropdown .drop-button {
+        display: none;
+    }
     .navbar a.icon {
         float: right;
         display: block;
@@ -66,6 +109,20 @@
 
     .navbar a {
         font-size: 18px;
+    }
+
+    .navbar.responsive .dropdown {
+        float: none;
+    }
+
+    .navbar.responsive .cats-dropdown {
+        position: relative;
+    }
+
+    .navbar.responsive .dropdown .drop-button {
+        display: block;
+        width: 100%;
+        text-align: left;
     }
 }
 
@@ -120,4 +177,82 @@ html, body {
 }
 * {
     box-sizing: border-box;
+}
+
+
+/* footer */
+.footer {
+    overflow: hidden;
+    background: rgba(180, 159, 141, .5);
+    text-decoration: none;
+    width: auto;
+    text-align: left;
+    padding: 24px 24px;
+}
+
+.footer .footer-left, .footer .footer-middle, .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .footer-left {
+    width: 33.33%;
+}
+
+.footer .footer-left h1 {
+    color:#674740;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 24px;
+    margin-left: 52px;
+}
+
+.footer .footer-links {
+    color: #92706e;
+    margin-left: 24px;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Vollkorn', serif;
+    color: inherit;
+}
+
+.footer .footer-copyright {
+    font-family: 'Vollkorn', serif;
+    color: #674740;
+    margin-left: 24px;
+}
+
+.footer .footer-middle {
+    width: 33.33%;
+}
+
+.footer .footer-middle p {
+    font-family: 'Vollkorn', serif;
+    color: #674740;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+}
+
+.footer .footer-middle i {
+    color: #674740;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-middle p span {
+    display: block;
+    line-height: 2;
+}
+
+.footer .footer-middle p a {
+    color: #92706e;
 }
