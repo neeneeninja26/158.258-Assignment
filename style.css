@@ -187,7 +187,7 @@ html, body {
     text-decoration: none;
     width: auto;
     text-align: left;
-    padding: 24px 24px;
+    padding: 16px 16px;
 }
 
 .footer .footer-left, .footer .footer-middle, .footer .footer-right {
@@ -195,8 +195,10 @@ html, body {
     vertical-align: top;
 }
 
+/* footer left */
+
 .footer .footer-left {
-    width: 33.33%;
+    width: 40%;
 }
 
 .footer .footer-left h1 {
@@ -206,6 +208,7 @@ html, body {
     margin-left: 52px;
 }
 
+/* footer left links */
 .footer .footer-links {
     color: #92706e;
     margin-left: 24px;
@@ -223,9 +226,10 @@ html, body {
     color: #674740;
     margin-left: 24px;
 }
+/* footer middle */
 
 .footer .footer-middle {
-    width: 33.33%;
+    width: 30%;
 }
 
 .footer .footer-middle p {
@@ -255,4 +259,41 @@ html, body {
 
 .footer .footer-middle p a {
     color: #92706e;
+}
+
+/* footer right */
+.footer-right h2 {
+    color:#674740;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 24px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-right .about {
+    line-height: 20px;
+    margin: 0;
+    display: flex;
+}
+
+.footer .social {
+    margin-top: 24px;
+}
+
+.footer .social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 24px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #674740;
+}
+
+.footer .footer-right {
+    width: 25%;
 }
