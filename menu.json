@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "text": "Our Drinks",
+            "id": "1",
+            "parentid": "-1"
+        }, {
+            "id": "2",
+            "parentid": "1",
+            "text": "Latte"
+        }, {
+            "id": "3",
+            "parentid": "1",
+            "text": "Cappuccino"
+        }, {
+            "id": "4",
+            "parentid": "1",
+            "text": "Flat White"
+        }
+    ]
+}
