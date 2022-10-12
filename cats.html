@@ -13,12 +13,23 @@
     <body>
         <div class="navbar" id="myNavbar"> <!-- navigation menu -->
             <a href="index.html" id="title">Cozy Cat Cafe</a>
-            <a href="menu.html" class="active">Cafe Menu</a>
-            <a href="#cats">Meet our Cats</a>
-            <a href="#contact">Contact Us</a>
+            <a href="menu.html">Cafe Menu</a>
+            <div class="dropdown">
+                <button class="drop-button">
+                    <a href="cats.html" class="active">Meet our Cats</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="cats-dropdown">
+                    <a href="cats.html">Our Rescues</a>
+                    <a href="cats.html">Adoptable</a>
+                    <a href="cats.html">How You Can Support</a>
+                </div>
+            </div>
+            <a href="about.html">About Us</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="ph-dots-three-outline-vertical"></i>
             </a>
+            <a href="#contact" class="right-split">Contact Us</a>
         </div>
     </body>
     <footer>
